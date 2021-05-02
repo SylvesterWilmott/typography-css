@@ -1,0 +1,59 @@
+:root{
+    --base-font-size: 16px;
+    --base-leading: 1.5;
+    --modular-ratio: 1.333;
+}
+
+.title-1{
+    font-size: calc(var(--base-font-size) * var(--modular-ratio) * var(--modular-ratio) * var(--modular-ratio) * var(--modular-ratio) * var(--modular-ratio));
+    line-height: calc(var(--base-leading) * 0.75);
+    margin-bottom: calc(var(--base-font-size) * var(--base-leading));
+    letter-spacing: calc(var(--base-font-size) * -0.035);
+}
+
+.title-2{
+    font-size: calc(var(--base-font-size) * var(--modular-ratio) * var(--modular-ratio) * var(--modular-ratio) * var(--modular-ratio));
+    line-height: calc(var(--base-leading) * 0.8);
+    margin-bottom: calc(var(--base-font-size) * var(--base-leading));
+    letter-spacing: calc(var(--base-font-size) * -0.025);
+}
+
+.title-3{
+    font-size: calc(var(--base-font-size) * var(--modular-ratio) * var(--modular-ratio) * var(--modular-ratio));
+    line-height: calc(var(--base-leading) * 0.85);
+    margin-bottom: calc(var(--base-font-size) * var(--base-leading));
+    letter-spacing: calc(var(--base-font-size) * -0.015);
+}
+
+.title-4{
+    font-size: calc(var(--base-font-size) * var(--modular-ratio) * var(--modular-ratio));
+    line-height: calc(var(--base-leading) * 0.9);
+    margin-bottom: calc(var(--base-font-size) * var(--base-leading));
+    letter-spacing: calc(var(--base-font-size) * -0.005);
+}
+
+.subtitle{
+    font-size: calc(var(--base-font-size) * var(--modular-ratio));
+    line-height: calc(var(--base-leading) * 0.95);
+    margin-bottom: calc(var(--base-font-size) * var(--base-leading));
+}
+
+.body{
+    font-size: calc(var(--base-font-size));
+    line-height: calc(var(--base-leading) * 1);
+    margin-bottom: calc(var(--base-font-size) * var(--base-leading));
+}
+
+.caption{
+    font-size: calc(var(--base-font-size) / var(--modular-ratio));
+    line-height: calc(var(--base-leading) * 1.05);
+    margin-bottom: calc(var(--base-font-size) * var(--base-leading));
+}
+
+@media only screen and (max-width: 1024px) {
+
+    :root{
+        --base-font-size: 14px;
+    }
+
+}
